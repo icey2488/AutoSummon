@@ -9,6 +9,8 @@ on:
 jobs:
   release:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write   # required for the packager to create a GitHub Release
     steps:
       - name: Clone project
         uses: actions/checkout@v4
