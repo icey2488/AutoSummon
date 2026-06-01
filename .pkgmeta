@@ -1,0 +1,18 @@
+# BigWigs packager configuration
+# Docs: https://github.com/BigWigsMods/packager
+
+# Put the addon files at the root of the zip (not inside a subfolder).
+package-as: AutoSummon
+
+# Replace this with your real CurseForge project ID once the page is live.
+# Found on your project's page under "About Project" > Project ID.
+externals: {}
+
+# No libraries to embed — the addon is fully self-contained.
+
+# Files and folders to leave out of the packaged zip.
+ignore:
+  - README.md
+  - .github
+  - "*.md"
+  - AutoSummon_curseforge_logo.png

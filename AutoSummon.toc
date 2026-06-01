@@ -1,0 +1,11 @@
+## Interface: 120005
+## Title: AutoSummon
+## Notes: Automatically accepts summons after a configurable delay
+## Author: icey2488
+## Version: @project-version@
+## X-Curse-Project-ID: 1560391
+## SavedVariables: AutoSummonDB
+## SavedVariablesPerCharacter: AutoSummonDBPC
+
+
+AutoSummon.lua

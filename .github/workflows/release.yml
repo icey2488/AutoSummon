@@ -1,0 +1,22 @@
+name: Package and Release
+
+# Runs when you push a version tag, e.g.:  git tag v1.2.0 && git push --tags
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone project
+        uses: actions/checkout@v4
+
+      - name: Package and release
+        uses: BigWigsMods/packager@v2
+        env:
+          CF_API_KEY: ${{ secrets.CF_API_KEY }}
+          GITHUB_OAUTH: ${{ secrets.GITHUB_TOKEN }}
+          # WOWI_API_TOKEN and WAGO_API_TOKEN can be added here later if you
+          # ever also publish to WoWInterface or Wago.
